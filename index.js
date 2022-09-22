@@ -1,16 +1,27 @@
+//string
 var text = "Hello, World!"; 
 
-const connection = "http://localhost:" //constant nao pode ser alteradas
+//number
+var number = 12.50
 
-    console.log("Olá Mundo!");
-    console.log (text);
-    console.log("Olá Mundo!!");
-    console.log("Olá Mundo!!");
+//boolean
+var boolean = true;
 
-    if (2==2){
-                //let por escopo, por um treixo de codigo    
-        let calc = 3
-        console.log(calc);
+//array
+//lista de  dados (lista variaveis,voce tambem consegue colocar objetos)
+var agencia = [
+    {
+        "carro": "Uno",
+        "bom":true
+    },
 
-        console.log (text);
-    }
+    "Vectra",
+    "fusca",
+    function(){},
+    222,
+    true,
+];
+// voce tambem pode colocar fora do array
+ var uno = {
+    "nome":"uno",
+}
