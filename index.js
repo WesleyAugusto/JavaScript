@@ -1,20 +1,15 @@
-function calculator(a,b,operator){//function 1 você pode chamar a função em varios lugares
-return eval('&{a} &{b} &{operator}');
-}
-let result = calculator(2,5,"*");
+let now = Date.now (); //timestamp
 
-console.log(result);
+console.log ('%c ${now}','color: white; background-color: blue');
 
-//funçoes anonimas
 
-( function (a,b,operator){//function 2
-    return eval('&{a} &{b} &{operator}');
-    } )(2,5,"*")
-   
-//arrow fuction
-let calculator = (a,b,operator) => {//function 3
-    return eval('&{a} &{b} &{operator}');
-    }
-    let resulte = calculator(2,5,"*");
-    
-    console.log(result);
+
+
+let now = new Date (); 
+
+console.log('%c ${now.getDate()}','color: white; background-color: blue'); //dia
+console.log('%c ${now.getMonth()}','color: white; background-color: blue');//mês
+console.log('%c ${now.getFullYear()}','color: white; background-color: blue');//ano
+console.log('%c ${now.toLocaleDateString(pt-BR)}','color: white; background-color: blue');//tras o horario de acordo com pais de  origem da  pessoa
+
+
