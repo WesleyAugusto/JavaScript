@@ -1,3 +1,1 @@
-let object = new Controller();
-
-object.initialize();
+window.object = new Controller();

@@ -1,12 +1,20 @@
 class Controller {
     constructor(){
-    
+        this._textElement = document.querySelector("#text");
+        this.initialize();
     }
 initialize(){
-    let a = document.querySelector("#text");
     
-        a.innerHTML = "Titulo da pagina"
+       this._textElement.innerHTML = "Titulo da pagina"
 
+}
+
+get textElement(){
+    return this._textElement;
+}
+set textElement(value){
+
+    this._textElement.innerHTML = value;
 }
 
 }
